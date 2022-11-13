@@ -23,33 +23,34 @@ import { IndexComponent } from "./pages/index/index.component";
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { APP_BASE_HREF } from "@angular/common";
 @NgModule({
-  declarations: [
-    AppComponent
-    // IndexComponent,
-    // ProfilepageComponent,
-    // RegisterpageComponent,
-    // LandingpageComponent
-  ],
-  imports: [
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule,
-    AppRoutingModule,
-    // BsDropdownModule.forRoot(),
-    // ProgressbarModule.forRoot(),
-    // TooltipModule.forRoot(),
-    // CollapseModule.forRoot(),
-    // TabsModule.forRoot(),
-    PagesModule
-    // PaginationModule.forRoot(),
-    // AlertModule.forRoot(),
-    // BsDatepickerModule.forRoot(),
-    // CarouselModule.forRoot(),
-    // ModalModule.forRoot()
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+        // IndexComponent,
+        // ProfilepageComponent,
+        // RegisterpageComponent,
+        // LandingpageComponent
+    ],
+    imports: [
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        RouterModule,
+        AppRoutingModule,
+        // BsDropdownModule.forRoot(),
+        // ProgressbarModule.forRoot(),
+        // TooltipModule.forRoot(),
+        // CollapseModule.forRoot(),
+        // TabsModule.forRoot(),
+        PagesModule
+        // PaginationModule.forRoot(),
+        // AlertModule.forRoot(),
+        // BsDatepickerModule.forRoot(),
+        // CarouselModule.forRoot(),
+        // ModalModule.forRoot()
+    ],
+    providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
