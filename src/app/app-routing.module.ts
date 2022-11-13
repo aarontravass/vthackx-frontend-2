@@ -4,14 +4,15 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./pages/index/index.component";
-import { BotpageComponent } from "./pages/botpage/botpage.component";
-import { ChartsComponent } from "./pages/charts/charts.component";
+
+import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
+import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "home", pathMatch: "full" },
     { path: "home", component: IndexComponent },
-    { path: "bot", component: BotpageComponent },
-    { path: "charts", component: ChartsComponent },
+    { path: "bot", component: ProfilepageComponent },
+    { path: "charts", component: RegisterpageComponent },
 
 ];
 
@@ -20,7 +21,7 @@ const routes: Routes = [
         CommonModule,
         BrowserModule,
         RouterModule.forRoot(routes, {
-            useHash: true,
+            useHash: false,
             enableTracing: true
         })
     ],
