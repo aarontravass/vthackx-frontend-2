@@ -20,7 +20,6 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 import { IndexComponent } from "./index/index.component";
 import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 
 
 @NgModule({
@@ -45,14 +44,12 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
   declarations: [
     IndexComponent,
     ProfilepageComponent,
-    RegisterpageComponent,
-    LandingpageComponent,
+    RegisterpageComponent
   ],
   exports: [
     IndexComponent,
     ProfilepageComponent,
-    RegisterpageComponent,
-    LandingpageComponent
+    RegisterpageComponent
   ],
   providers: []
 })
