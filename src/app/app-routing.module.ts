@@ -4,26 +4,26 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./pages/index/index.component";
-import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { BotpageComponent } from "./pages/botpage/botpage.component";
+import { ChartsComponent } from "./pages/charts/charts.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: IndexComponent },
-  { path: "profile", component: ProfilepageComponent },
-  { path: "register", component: RegisterpageComponent },
-  { path: "landing", component: LandingpageComponent }
+    { path: "", redirectTo: "home", pathMatch: "full" },
+    { path: "home", component: IndexComponent },
+    { path: "bot", component: BotpageComponent },
+    { path: "charts", component: ChartsComponent },
+
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserModule,
-    RouterModule.forRoot(routes, {
-      useHash: true
-    })
-  ],
-  exports: []
+    imports: [
+        CommonModule,
+        BrowserModule,
+        RouterModule.forRoot(routes, {
+            useHash: true,
+            enableTracing: true
+        })
+    ],
+    exports: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
