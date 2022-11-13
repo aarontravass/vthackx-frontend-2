@@ -9,47 +9,24 @@
         class="navbar-brand"
         placement="bottom"
         [routerLink]="['/home']"
-        target="_blank"
         tooltip="A better understanding of our worlds emessions"
       >
-        <span> Carbon Count• </span> A View of our world
+        <span> Carbon Count• </span> Visualize Carbon footprint of each country
       </a>
     </div>
   </div>
 </nav>
 <div class="wrapper">
-  <div class="page-header header-filter">
-    <div class="squares square1"></div>
-    <div class="squares square2"></div>
-    <div class="squares square3"></div>
-    <div class="squares square4"></div>
-    <div class="squares square5"></div>
-    <div class="squares square6"></div>
-    <div class="squares square7"></div>
-    <div class="container">
-      <div class="content-center brand">
-        <h1 class="h1-seo">Carbon Count•</h1>
-        <h3>
-          Visualize Carbon footprint of each country and ask question in the
-          chat bot.
-        </h3>
-      </div>
-    </div>
-  </div>
   <div class="main">
     <div class="section section-examples" data-background-color="black">
       <img class="path" src="assets/img/path1.png" />
 
       <div class="space-50"></div>
       <div class="container text-center" >
-       
-        
-<tableau-viz id="tableauViz"       
-src='https://public.tableau.com/views/2018-airTransportation-co2-emission/Sheet3?:language=en-US&:display_count=n&:origin=viz_share_link'>
-</tableau-viz>
-
-
-      
+        <tableau-viz 
+          id="tableauViz"       
+          src='https://public.tableau.com/views/2018-airTransportation-co2-emission/Sheet3?:language=en-US&:display_count=n&:origin=viz_share_link'>
+        </tableau-viz>
       </div>
     </div>
   </div>
@@ -83,7 +60,7 @@ src='https://public.tableau.com/views/2018-airTransportation-co2-emission/Sheet3
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://devpost.com/software/visualization-of-carbon-emission-with-ai-"
+                href="https://devpost.com/software/visualization-of-carbon-emission-with-ai-bot"
               >
                 Team
               </a>
