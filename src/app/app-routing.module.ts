@@ -9,10 +9,10 @@ import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.c
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "home", pathMatch: "full" },
-    { path: "home", component: IndexComponent },
+    { path: "", component: IndexComponent },
     { path: "bot", component: ProfilepageComponent },
     { path: "charts", component: RegisterpageComponent },
+    { path: "**", component: IndexComponent },
 
 ];
 
